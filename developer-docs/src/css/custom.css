@@ -1,0 +1,191 @@
+/* *
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* [data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: hsl(266, 78%, 58%);
+  --ifm-color-primary-dark: hsl(266, 78%, 58%);
+  --ifm-color-primary-darker: hsl(266, 78%, 58%);
+  --ifm-color-primary-darkest: hsl(266, 78%, 58%);
+  --ifm-color-primary-light: hsl(266, 78%, 58%);
+  --ifm-color-primary-lighter: hsl(266, 78%, 58%);
+  --ifm-color-primary-lightest: hsl(266, 78%, 58%);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.theme-doc-sidebar-menu {
+  font-size: 14px;
+}
+
+html[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+html[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+.theme-back-to-top-button {
+  display: none;
+}
+
+.cards-display {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, 250px)
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 250px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:hover .card__content--animation {
+    top: 0;
+    transition: all 0.35s cubic-bezier(.1,.72,.4,.97);
+}
+
+.card:hover .card__img--animation {
+    transform: translateY(-100%);
+    transition: all 0.35s cubic-bezier(.1,.72,.4,.97);
+}
+
+
+.card__img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: block;
+
+}
+
+.card__img--animation {
+    transform: translateY(0);
+    transition: all 0.35s 0.35s cubic-bezier(.1,.72,.4,.97);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 20px;
+
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+
+.card__content--animation {
+        transform: translateY(0);
+        transition: all 0.35s 0.35s cubic-bezier(.1,.72,.4,.97);
+        will-change: bottom, background-color, transform, padding;
+        z-index: 1;
+}
+
+.card__title {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card__description {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}

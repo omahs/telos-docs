@@ -1,23 +1,36 @@
 # Dependencies
-/node_modules
+/community-docs/node_modules
+/developer-docs/node_modules
 
 # Production
-/build
+/community-docs/build
+/developer-docs/build
 
 # Generated files
-.docusaurus
-.cache-loader
+/community-docs/.docusaurus
+/developer-docs/.docusaurus
+/community-docs/.cache-loader
+/developer-docs/.cache-loader
 
 # ide files
-.idea
+/community-docs/.idea
+/developer-docs/.idea
 
 # Misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/community-docs/.DS_Store
+/developer-docs/.DS_Store
+/community-docs/.env.local
+/developer-docs/.env.local
+/community-docs/.env.development.local
+/developer-docs/.env.development.local
+/community-docs/.env.test.local
+/developer-docs/.env.test.local
+/community-docs/.env.production.local
+/developer-docs/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/community-docs/npm-debug.log*
+/developer-docs/npm-debug.log*
+/community-docs/yarn-debug.log*
+/developer-docs/yarn-debug.log*
+/community-docs/yarn-error.log*
+/developer-docs/yarn-error.log*

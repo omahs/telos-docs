@@ -1,5 +1,6 @@
 ---
 slug: /
+title: Introduction
 sidebar_positon: 1
 hide_table_of_contents: true
 ---
