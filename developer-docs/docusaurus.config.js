@@ -118,7 +118,7 @@ const config = {
           {
             position: 'right',
             label: 'Community Docs',
-            href: 'https://docs.telos.net/community',
+            href: 'https://help.telos.net',
           },
 
         ],

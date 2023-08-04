@@ -8,8 +8,8 @@ const config = {
 
   title: 'Telos Docs',
   tagline: 'Documentation and Tutorials for Telos',
-  url: 'https://docs.telos.net',
-  baseUrl: '/community',
+  url: 'https://help.telos.net',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/Telos_logo.png',
